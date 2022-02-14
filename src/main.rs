@@ -1,6 +1,6 @@
 use digest::Digest;
 
-// This doesn't compile
+// This compiles
 fn repr<D: Digest>() -> usize {
     D::output_size()
 }
